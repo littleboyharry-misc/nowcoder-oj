@@ -11,6 +11,6 @@ func ScanWords() {
 	rd := bufio.NewScanner(os.Stdin)
 	rd.Split(bufio.ScanWords)
 	for rd.Scan() {
-		fmt.Println(rd.Text())
+		fmt.Println(rd.Bytes())
 	}
 }

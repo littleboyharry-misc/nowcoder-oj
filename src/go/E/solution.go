@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strconv"
 )
 
 func main() {
@@ -13,7 +12,8 @@ func main() {
 
 	readInt := func() int {
 		sc.Scan()
-		r, _ := strconv.Atoi(sc.Text())
+		r := bytesToInt(sc.Bytes())
+
 		return r
 	}
 
@@ -24,4 +24,13 @@ func main() {
 		}
 		fmt.Println(sum)
 	}
+}
+
+func bytesToInt(buf []byte) int {
+	var n int
+	for _, v := range buf {
+		n += int(v - '0')
+		n *= 10
+	}
+	return n
 }
