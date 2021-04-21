@@ -1,6 +1,8 @@
-牛客网 OJ 常见输入输出编程方法
+# 牛客网 OJ 常见输入输出编程方法
 
 官方解释：<https://www.nowcoder.com/discuss/276>
+
+练习网站：<https://ac.nowcoder.com/acm/contest/5657/F>
 
 ## 详细信息
 
