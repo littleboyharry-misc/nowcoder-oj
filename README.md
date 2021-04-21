@@ -16,3 +16,4 @@
 GO:
 
 - 留意样例 E，本样例中同时使用了 `bufio.NewScanner(os.Stdin)` `sc.Split(bufio.ScanWords)`，可适与大量输入和解析，具体代码示例留意对应 solution.go 文件
+- 使用 `text/scanner` 来处理 token 的样例 G
